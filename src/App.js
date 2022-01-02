@@ -2,16 +2,10 @@ import { useState } from 'react';
 import Header from './components/Header';
 import Cards from './components/Cards'
 import uniqid from 'uniqid';
-
-const items = [
-    { title: 'big', id: uniqid() },
-    { title: 'small', id: uniqid() },
-    { title: 'medium', id: uniqid() },
-    { title: 'large', id: uniqid() },
-    { title: 'xxl', id: uniqid() },
-  ];
+import data from './data'
 
 const App = () => {
+  const items = data;
   const [clickedItems, setClickedItems] = useState([]);
   const [score, setScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
