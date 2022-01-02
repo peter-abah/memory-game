@@ -1,0 +1,30 @@
+.card {
+  min-width: fit-content;
+  width: 10rem;
+  margin: 1.5rem;
+  border-radius: .5rem;
+  background-color: #fff;
+  overflow: hidden;
+
+  &:hover {
+    transform: scale(1.03);
+    background-color: var(--color-bg);
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+
+  &__img {
+    width: 9rem;
+    height: 9rem;
+    margin: 1rem;
+  }
+
+  &__title {
+    padding: .5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: var(--color-secondary);
+  }
+}
