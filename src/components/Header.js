@@ -2,8 +2,8 @@ import ScoreBoard from './ScoreBoard';
 
 const Header = (props) => {
   return (
-    <header>
-      <h1>Memory Card</h1>
+    <header className="header">
+      <h1 className="header__title">Memory Card</h1>
       <ScoreBoard {...props} />
     </header>
   );
