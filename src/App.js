@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import Header from './components/Header';
 import Cards from './components/Cards'
-import uniqid from 'uniqid';
 import data from './data'
+import { shuffleArray } from './helpers';
 
 const App = () => {
   const items = data;
@@ -35,10 +35,11 @@ const App = () => {
     if ((items.length - clickedItems.length) === 1) reset();
   };
 
+  const shuffledItems = shuffleArray(items);
   return (
     <div>
       <Header score={score} highScore={highScore}/>
-      <Cards items={items} handleClick={handleClick}/>
+      <Cards items={shuffledItems} handleClick={handleClick}/>
     </div>
   )
 }
