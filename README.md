@@ -1,7 +1,7 @@
 # Memory Game
 
 This is a memory game made with React to practice using functional components and state handling.
-Built as part of [The Odin's Project curriculum](https://www.theodinproject.com)
+Built as part of [The Odin's Project curriculum](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/javascript/lessons/memory-card)
 
 [Live demo here](https://peter-abah.github.io/memory-game)
 
