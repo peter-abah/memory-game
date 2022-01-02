@@ -150,10 +150,7 @@ body {
   background-color: var(--color-bg);
 }
 
-button,
-input,
-select,
-textarea {
+button {
   padding: 0;
   font-family: inherit;
   font-size: inherit;
@@ -161,4 +158,5 @@ textarea {
   color: inherit;
   background-color: inherit;
   border: none;
+  cursor: pointer;
 }

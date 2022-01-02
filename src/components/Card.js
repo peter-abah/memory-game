@@ -3,7 +3,7 @@ const Card = (props) => {
   return (
     <button className="card" data-id={id} onClick={handleClick}>
       <img className="card__img" src={image} alt={title} />
-      <h3 className="card__title">{title}</h3>
+      <h2 className="card__title">{title}</h2>
     </button>
   );
 };
