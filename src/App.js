@@ -1,6 +1,10 @@
 import { useState } from 'react';
+
+import './scss/main.scss';
+
 import Header from './components/Header';
 import Cards from './components/Cards'
+
 import data from './data'
 import { shuffleArray } from './helpers';
 
