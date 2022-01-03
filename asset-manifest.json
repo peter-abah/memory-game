@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/memory-game/static/css/main.f721838f.css",
-    "main.js": "/memory-game/static/js/main.01d82a77.js",
+    "main.css": "/memory-game/static/css/main.f91c40bb.css",
+    "main.js": "/memory-game/static/js/main.0a5157ff.js",
     "static/media/ceylon.svg": "/memory-game/static/media/ceylon.2c240454635123eef37ad3df21b812de.svg",
     "static/media/atom.svg": "/memory-game/static/media/atom.ef294a9b0d89af5362a5dac7838da221.svg",
     "static/media/go.svg": "/memory-game/static/media/go.d2e0f5614f6ba2940ac22374692e56ef.svg",
@@ -37,11 +37,11 @@
     "static/media/cakephp.svg": "/memory-game/static/media/cakephp.9de0668ece59a6152aa740f5ef6ece84.svg",
     "static/media/ionic.svg": "/memory-game/static/media/ionic.648b025c7714531b1c0a4b7ff6faff70.svg",
     "static/media/visualstudio.svg": "/memory-game/static/media/visualstudio.5037e0b0bc46fa1208bea37bdf92199f.svg",
-    "main.f721838f.css.map": "/memory-game/static/css/main.f721838f.css.map",
-    "main.01d82a77.js.map": "/memory-game/static/js/main.01d82a77.js.map"
+    "main.f91c40bb.css.map": "/memory-game/static/css/main.f91c40bb.css.map",
+    "main.0a5157ff.js.map": "/memory-game/static/js/main.0a5157ff.js.map"
   },
   "entrypoints": [
-    "static/css/main.f721838f.css",
-    "static/js/main.01d82a77.js"
+    "static/css/main.f91c40bb.css",
+    "static/js/main.0a5157ff.js"
   ]
 }
