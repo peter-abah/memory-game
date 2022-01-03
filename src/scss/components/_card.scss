@@ -5,6 +5,7 @@
   border-radius: .5rem;
   background-color: #fff;
   overflow: hidden;
+  transition: transform 300ms ease-in;
 
   &:hover {
     transform: scale(1.03);

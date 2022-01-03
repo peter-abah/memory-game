@@ -1,6 +1,7 @@
 @use 'card';
 @use 'cards';
 @use 'header';
+@use 'game-end';
 
 
 .info {
@@ -8,4 +9,20 @@
   padding-top: 1rem;
   font-size: 1.2rem;
   color: var(--color-secondary);
+}
+
+.btn {
+  padding: .5rem .75rem;
+  color: #fff;
+  background: var(--color-secondary);
+  border-radius: .5rem;
+  transition: transform 300ms ease-in;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
 }

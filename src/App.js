@@ -4,7 +4,8 @@ import './scss/main.scss';
 
 import Header from './components/Header';
 import Info from './components/Info';
-import Cards from './components/Cards'
+import Cards from './components/Cards';
+import GameEnd from './components/GameEnd';
 
 import data from './data'
 import { shuffleArray } from './helpers';
@@ -14,6 +15,7 @@ const App = () => {
   const [clickedItems, setClickedItems] = useState([]);
   const [score, setScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
+  const [gameOver, setGameOver] = useState(false);
 
   const reset = () => {
     setScore(0);
@@ -37,15 +39,29 @@ const App = () => {
     const item = items.filter((e) => e.id === id)[0];
     setClickedItems([...clickedItems, item]);
 
-    if ((items.length - clickedItems.length) === 1) reset();
+    if ((items.length - clickedItems.length) === 1) setGameOver(true);
+  };
+
+  const playAgain = () => {
+    setScore(0);
+    setClickedItems([]);
+    setGameOver(false);
   };
 
   const shuffledItems = shuffleArray(items);
   return (
     <div>
       <Header score={score} highScore={highScore}/>
-      <Info />
-      <Cards items={shuffledItems} handleClick={handleClick}/>
+      {gameOver ? 
+        <GameEnd handleClick={playAgain} />
+      :
+        (
+          <div>
+            <Info />
+            <Cards items={shuffledItems} handleClick={handleClick} />
+          </div>
+        )
+      }
     </div>
   )
 }
