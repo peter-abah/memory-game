@@ -7,5 +7,6 @@ const shuffleArray = (array) => {
 };
 
 const helpers = { shuffleArray };
+
 export default helpers;
 export { shuffleArray };

@@ -3,6 +3,7 @@ import { useState } from 'react';
 import './scss/main.scss';
 
 import Header from './components/Header';
+import Info from './components/Info';
 import Cards from './components/Cards'
 
 import data from './data'
@@ -43,6 +44,7 @@ const App = () => {
   return (
     <div>
       <Header score={score} highScore={highScore}/>
+      <Info />
       <Cards items={shuffledItems} handleClick={handleClick}/>
     </div>
   )

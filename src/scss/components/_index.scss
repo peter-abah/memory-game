@@ -1,3 +1,11 @@
 @use 'card';
 @use 'cards';
 @use 'header';
+
+
+.info {
+  margin: 0 10vw;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  color: var(--color-secondary);
+}
